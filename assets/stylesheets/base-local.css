@@ -82,6 +82,11 @@ h6 {
 section {
   padding: 1em 0;
 }
+section.highlighted p {
+  padding: 1em 1em;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+}
 p {
   margin: 0 0 1em;
   line-height: 1.4285em;
@@ -507,6 +512,7 @@ article {
   justify-content: center;
 }
 .avatar {
+  clip-path: circle(50%);
   position: relative;
   max-width: 15rem;
   display: block;
@@ -617,9 +623,11 @@ article {
 
 @media only screen and (max-width: 767px) {
   .name,
-  .job,
-  .contacts {
+  .job {
     text-align: center;
+  }
+  .contacts {
+    text-align: left;
   }
   .contacts li {
     margin-right: 0;
